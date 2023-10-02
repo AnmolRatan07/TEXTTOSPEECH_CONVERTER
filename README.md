@@ -1,2 +1,2 @@
-**Weather Forecasting**
-The weather app using HTML, CSS, and JavaScript to use the OpenWeatherMap API to display the current weather in locations around the world. Background image uses unsplash API to generate relevant image based off city name.
+
+This is a speech synthesis application that runs on the SpeechSynthesis object of the WebSpeechAPI. It is styled in a neumorphic manner. Play, pause, resume, rate, pitch, voice, and cancel speech are all available.
