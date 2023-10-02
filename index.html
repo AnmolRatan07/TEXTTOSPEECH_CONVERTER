@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to speech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Mukta:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Text to speech</h1>
+    <form>
+        <div class="voice-selection">
+            <label for="voices">Choose a voice</label>
+            <select class="voice-selection" id="voices"></select>
+        </div>
+        <div class="form-control">
+            <div class="rate">
+                <label for="rate">Speed (<span class ="rate-value">1</span>)</label>
+                <input type="range" class="rate-control" id="rate" min="0.5" max="2" value="1" step="0.25">
+            </div>
+            <div class="pitch">
+                <label for="pitch">Pitch (<span class="pitch-value">1</span>)</label>
+                <input type="range" class="pitch-control" id="pitch" min="0.2" max="2" value="1" step="0.2">
+            </div>
+        </div>
+        <div class="text">
+            <label for="text" class="text-label">Text</label>
+            <textarea class="text-control" id="text" spellcheck="false"></textarea>
+        </div>
+    </form>
+    <div class="control-btns">
+        <button id="stop">Stop</button>
+        <button id="play">Play</button>
+    </div>
+</body>
+</html>
